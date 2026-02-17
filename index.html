@@ -3,398 +3,294 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Nagalakshmi Choudary</title>
+<title>Manjunath N | Founder</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
+
+html{scroll-behavior:smooth;}
 
 body{
-background:#0f1115;
-color:#eaeaea;
-font-family:'Inter',sans-serif;
-overflow-x:hidden;
+    background:#0a0a0a;
+    color:#ffffff;
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
 }
 
-h1,h2,h3{
-font-family:'Playfair Display',serif;
-}
-
-section{
-padding:120px 8%;
-position:relative;
-}
-
-.container{
-max-width:1300px;
-margin:auto;
-}
-
-/* NAV */
-
+/* NAVBAR */
 nav{
-position:fixed;
-width:100%;
-top:0;
-padding:25px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(15,17,21,0.75);
-backdrop-filter:blur(12px);
-z-index:999;
+    position:fixed;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    background:rgba(10,10,10,0.85);
+    backdrop-filter:blur(10px);
+    z-index:1000;
 }
 
 nav h2{
-color:#d4af37;
-font-weight:700;
-letter-spacing:1px;
+    font-family:'Cinzel',serif;
+    color:#d4af37;
+    letter-spacing:2px;
 }
 
 nav a{
-color:#ccc;
-text-decoration:none;
-margin-left:30px;
-font-size:14px;
-transition:0.3s;
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:14px;
 }
 
-nav a:hover{
-color:#d4af37;
-}
+nav a:hover{color:#d4af37;}
 
 /* HERO */
-
 .hero{
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-background:url("https://picsum.photos/1920/1080?1") center/cover no-repeat;
-position:relative;
-}
-
-.hero::after{
-content:"";
-position:absolute;
-width:100%;
-height:100%;
-background:linear-gradient(to bottom,rgba(0,0,0,0.6),rgba(0,0,0,0.85));
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-max-width:800px;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 10%;
 }
 
 .hero h1{
-font-size:64px;
-color:#fff;
-line-height:1.2;
+    font-family:'Cinzel',serif;
+    font-size:60px;
+    color:#d4af37;
+    letter-spacing:3px;
 }
 
-.hero h1 span{
-color:#d4af37;
+.hero h3{
+    margin-top:20px;
+    font-weight:300;
+    font-size:20px;
+    opacity:0.85;
 }
 
-.hero p{
-margin-top:25px;
-font-size:18px;
-color:#bbb;
+.divider{
+    width:120px;
+    height:2px;
+    background:#d4af37;
+    margin:25px 0;
 }
 
 .btn{
-display:inline-block;
-margin-top:40px;
-padding:14px 40px;
-border:1px solid #d4af37;
-color:#d4af37;
-text-decoration:none;
-letter-spacing:1px;
-transition:0.4s;
+    margin-top:20px;
+    padding:12px 30px;
+    border:1px solid #d4af37;
+    color:#d4af37;
+    text-decoration:none;
+    transition:0.4s;
+    font-size:14px;
 }
 
 .btn:hover{
-background:#d4af37;
-color:#000;
+    background:#d4af37;
+    color:#0a0a0a;
 }
 
-/* IMAGE RAIL */
-
-.image-rail{
-display:flex;
-gap:20px;
-overflow:hidden;
-padding:40px 0;
+/* SECTIONS */
+section{
+    padding:100px 10%;
 }
 
-.image-rail img{
-width:320px;
-height:200px;
-object-fit:cover;
-border-radius:8px;
-transition:0.4s;
-animation:scrollRail 40s linear infinite;
+.section-title{
+    font-family:'Cinzel',serif;
+    color:#d4af37;
+    font-size:32px;
+    text-align:center;
+    margin-bottom:50px;
 }
 
-.image-rail img:hover{
-transform:scale(1.08);
-}
-
-@keyframes scrollRail{
-0%{transform:translateX(0);}
-100%{transform:translateX(-50%);}
-}
-
-/* ABOUT */
-
-.split{
-display:flex;
-gap:80px;
-align-items:center;
-flex-wrap:wrap;
-}
-
-.split img{
-width:420px;
-border-radius:8px;
-}
-
-.split-text{
-flex:1;
-}
-
-.split-text h2{
-font-size:42px;
-margin-bottom:30px;
-color:#d4af37;
-}
-
-.split-text p{
-line-height:1.8;
-color:#ccc;
-font-size:17px;
+/* QUOTE */
+.quote{
+    text-align:center;
+    font-size:24px;
+    font-weight:300;
+    max-width:800px;
+    margin:auto;
+    line-height:1.6;
 }
 
 /* IMPACT */
-
-.impact-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:60px;
-text-align:center;
-margin-top:60px;
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    flex-wrap:wrap;
+    text-align:center;
 }
 
-.impact-grid h3{
-font-size:50px;
-color:#d4af37;
+.stat{
+    font-size:42px;
+    color:#d4af37;
+    font-weight:600;
 }
 
-.impact-grid p{
-margin-top:10px;
-color:#aaa;
+/* MOVEMENT */
+.movement{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
 }
 
-/* GALLERY */
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-margin-top:50px;
+.movement-buttons{
+    margin-top:30px;
 }
 
-.gallery img{
-width:100%;
-border-radius:8px;
-transition:0.4s;
-}
-
-.gallery img:hover{
-transform:scale(1.05);
-}
-
-/* NEWSLETTER */
-
-.newsletter{
-text-align:center;
-background:#141821;
-padding:80px 8%;
-}
-
-.newsletter h2{
-font-size:36px;
-color:#d4af37;
-}
-
-.newsletter input{
-margin-top:30px;
-width:320px;
-padding:14px;
-background:none;
-border:none;
-border-bottom:1px solid #d4af37;
-color:#fff;
-font-size:16px;
-}
-
-.newsletter button{
-margin-top:30px;
-padding:12px 35px;
-background:#d4af37;
-border:none;
-font-weight:600;
+.movement-buttons a{
+    margin:10px;
+    display:inline-block;
 }
 
 /* FOOTER */
-
 footer{
-padding:40px 8%;
-background:#0b0d11;
-text-align:center;
-color:#777;
+    text-align:center;
+    padding:40px;
+    background:#111;
+    color:#777;
+    font-size:14px;
 }
 
-/* RESPONSIVE */
+/* SCROLL REVEAL */
+.reveal{
+    opacity:0;
+    transform:translateY(60px);
+    transition:1s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
 
 @media(max-width:768px){
-
-.hero h1{
-font-size:36px;
+.hero h1{font-size:38px;}
+.section-title{font-size:26px;}
+.stats{gap:30px;}
 }
-
-.split{
-flex-direction:column;
-}
-
-.split img{
-width:100%;
-}
-
-}
-
 </style>
 </head>
 
 <body>
 
 <nav>
-<h2>Dr. Nagalakshmi Choudary</h2>
+<h2>MANJUNATH N</h2>
 <div>
 <a href="#about">About</a>
 <a href="#impact">Impact</a>
-<a href="#media">Media</a>
-<a href="#contact">Contact</a>
+<a href="#vision">Vision</a>
+<a href="#movement">Movement</a>
 </div>
 </nav>
 
 <!-- HERO -->
-
 <section class="hero">
-<div class="hero-content">
-<h1>Leadership Rooted in <span>Justice</span></h1>
-<p>Chairperson – Women’s Commission of Karnataka</p>
-<a href="#about" class="btn">Explore Her Journey</a>
-</div>
+<h1>MANJUNATH N</h1>
+<div class="divider"></div>
+<h3>Founder | Education Reformer | Visionary Leader</h3>
+<a href="#movement" class="btn">Enter The Movement</a>
 </section>
 
-<!-- IMAGE RAIL -->
-
-<section>
-<div class="container">
-<div class="image-rail">
-<img src="https://picsum.photos/400/300?2">
-<img src="https://picsum.photos/400/300?3">
-<img src="https://picsum.photos/400/300?4">
-<img src="https://picsum.photos/400/300?5">
-<img src="https://picsum.photos/400/300?6">
-<img src="https://picsum.photos/400/300?7">
-<img src="https://picsum.photos/400/300?8">
-<img src="https://picsum.photos/400/300?9">
-</div>
+<!-- POWER QUOTE -->
+<section class="reveal">
+<div class="quote">
+“Education is not a business. It is a national responsibility.”
 </div>
 </section>
 
 <!-- ABOUT -->
-
-<section id="about">
-<div class="container split">
-<img src="https://picsum.photos/500/700?10">
-<div class="split-text">
-<h2>The Woman. The Leader.</h2>
-<p>
-Dr. Nagalakshmi Choudary has dedicated her career to strengthening women’s rights and institutional justice across Karnataka. Through policy advocacy, grassroots engagement, and steadfast leadership, she continues to shape a more equitable society.
-</p>
-</div>
+<section id="about" class="reveal">
+<h2 class="section-title">About</h2>
+<div style="max-width:800px;margin:auto;text-align:center;">
+Building scalable education systems with long-term structural impact.  
+Leading a large student-focused initiative with a ₹200 Crore long-term growth vision.
 </div>
 </section>
 
 <!-- IMPACT -->
-
-<section id="impact">
-<div class="container">
-<h2 style="color:#d4af37;font-size:42px;">Impact & Reach</h2>
-
-<div class="impact-grid">
+<section id="impact" class="reveal">
+<h2 class="section-title">Impact & Growth</h2>
+<div class="stats">
 <div>
-<h3>10,000+</h3>
-<p>Women Assisted</p>
+<div class="stat" data-target="100000">0</div>
+Students Target
 </div>
 <div>
-<h3>500+</h3>
-<p>Cases Addressed</p>
+<div class="stat" data-target="40">0</div>
+Team Members
 </div>
 <div>
-<h3>120+</h3>
-<p>District Programs</p>
+<div class="stat" data-target="200">0</div>
+₹ Crore Vision
 </div>
-<div>
-<h3>50+</h3>
-<p>Policy Initiatives</p>
-</div>
-</div>
-
 </div>
 </section>
 
-<!-- MEDIA -->
-
-<section id="media">
-<div class="container">
-<h2 style="color:#d4af37;font-size:42px;">Moments of Leadership</h2>
-
-<div class="gallery">
-<img src="https://picsum.photos/400/300?11">
-<img src="https://picsum.photos/400/300?12">
-<img src="https://picsum.photos/400/300?13">
-<img src="https://picsum.photos/400/300?14">
-</div>
-
+<!-- VISION -->
+<section id="vision" class="reveal">
+<h2 class="section-title">The Long-Term Vision</h2>
+<div class="movement">
+Building a national education platform, technology-driven learning systems,
+youth development networks, and scalable institutional models designed for long-term impact.
 </div>
 </section>
 
-<!-- NEWSLETTER -->
-
-<section class="newsletter" id="contact">
-<h2>Stay Connected</h2>
-<input type="email" placeholder="Enter your email">
-<br>
-<button>Subscribe</button>
+<!-- MOVEMENT -->
+<section id="movement" class="reveal">
+<h2 class="section-title">The Education Movement</h2>
+<div class="movement">
+This is not just an institution. It is a generational shift toward accessible, scalable, and responsible education.
+<div class="movement-buttons">
+<a href="#" class="btn">Join as Student</a>
+<a href="#" class="btn">Partner</a>
+<a href="#" class="btn">Collaborate</a>
+</div>
+</div>
 </section>
 
 <footer>
-© 2026 Dr. Nagalakshmi Choudary | All Rights Reserved
+© 2026 Manjunath N — Building Long-Term Impact
 </footer>
+
+<script>
+
+/* COUNTER */
+document.querySelectorAll('.stat').forEach(counter=>{
+const update=()=>{
+const target=+counter.getAttribute('data-target');
+const count=+counter.innerText;
+const inc=target/150;
+if(count<target){
+counter.innerText=Math.ceil(count+inc);
+setTimeout(update,10);
+}else{
+counter.innerText=target.toLocaleString()+"+";
+}
+};
+update();
+});
+
+/* SCROLL REVEAL */
+function reveal(){
+document.querySelectorAll('.reveal').forEach(el=>{
+if(el.getBoundingClientRect().top < window.innerHeight-100){
+el.classList.add('active');
+}
+});
+}
+window.addEventListener('scroll',reveal);
+reveal();
+
+</script>
 
 </body>
 </html>
-
