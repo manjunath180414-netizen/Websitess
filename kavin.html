@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Future Champion | Personal Profile</title>
+<title>Elite Athlete | Built For Greatness</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -16,7 +16,7 @@
 }
 
 body{
-    background:#0b0b0b;
+    background:#0c0c0c;
     color:white;
     overflow-x:hidden;
 }
@@ -25,25 +25,26 @@ body{
 nav{
     position:fixed;
     width:100%;
-    padding:20px 50px;
+    padding:20px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
     background:rgba(0,0,0,0.6);
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(8px);
     z-index:1000;
 }
 
 nav h1{
-    color:gold;
     font-weight:900;
     letter-spacing:2px;
+    color:gold;
 }
 
 nav a{
     color:white;
     text-decoration:none;
     margin-left:30px;
+    font-weight:500;
     transition:0.3s;
 }
 
@@ -54,88 +55,131 @@ nav a:hover{
 /* HERO */
 .hero{
     height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
     background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),
     url('https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf');
     background-size:cover;
     background-position:center;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
     padding:20px;
 }
 
 .hero h2{
-    font-size:60px;
+    font-size:70px;
     font-weight:900;
+    letter-spacing:3px;
+}
+
+.gold{
     color:gold;
 }
 
 .hero p{
-    font-size:22px;
-    margin:20px 0;
+    margin-top:20px;
+    font-size:20px;
+    opacity:0.8;
 }
 
 .btn{
-    padding:12px 30px;
+    margin-top:30px;
+    padding:14px 40px;
     border:2px solid gold;
     background:transparent;
     color:gold;
-    font-weight:bold;
+    font-weight:700;
     cursor:pointer;
     transition:0.4s;
-    margin:10px;
+    letter-spacing:1px;
 }
 
 .btn:hover{
     background:gold;
     color:black;
+    box-shadow:0 0 20px gold;
 }
 
-/* ABOUT */
+/* SECTION */
 .section{
-    padding:100px 10%;
+    padding:100px 8%;
     text-align:center;
 }
 
 .section h3{
     font-size:40px;
-    color:gold;
     margin-bottom:20px;
+    color:gold;
 }
 
 .section p{
     max-width:800px;
     margin:auto;
     line-height:1.8;
-    font-size:18px;
+    font-weight:300;
+    opacity:0.9;
 }
 
-/* ACHIEVEMENTS */
-.achievements{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-    margin-top:50px;
+/* STATS */
+.stats{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    margin-top:60px;
 }
 
-.card{
-    background:#111;
-    padding:30px;
-    border-radius:15px;
-    border:1px solid rgba(255,215,0,0.3);
-    transition:0.4s;
+.stat{
+    margin:20px;
 }
 
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 20px gold;
-}
-
-.card h4{
+.stat h4{
+    font-size:50px;
     color:gold;
-    margin-bottom:10px;
+}
+
+.stat span{
+    font-size:18px;
+    opacity:0.8;
+}
+
+/* TIMELINE */
+.timeline{
+    margin-top:60px;
+}
+
+.timeline-item{
+    margin:30px 0;
+    font-size:18px;
+    letter-spacing:1px;
+}
+
+.timeline-item strong{
+    color:gold;
+}
+
+/* TRAINING */
+.training{
+    background:#111;
+}
+
+/* SOCIAL */
+.social{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:40px;
+    font-size:20px;
+}
+
+.social div{
+    border:1px solid gold;
+    padding:20px 30px;
+    transition:0.3s;
+}
+
+.social div:hover{
+    background:gold;
+    color:black;
 }
 
 /* FOOTER */
@@ -151,67 +195,87 @@ footer{
 <body>
 
 <nav>
-    <h1>CHAMPION</h1>
+    <h1>ATHLETE NAME</h1>
     <div>
-        <a href="#about">About</a>
+        <a href="#journey">Journey</a>
         <a href="#achievements">Achievements</a>
         <a href="#contact">Contact</a>
     </div>
 </nav>
 
 <section class="hero">
-    <h2>Small Age. Big Dreams. Golden Future.</h2>
-    <p>Gold Medalist | Future Olympian</p>
     <div>
-        <button class="btn">View Achievements</button>
-        <button class="btn">Partner With Me</button>
+        <h2>BUILT FOR <span class="gold">GREATNESS</span></h2>
+        <p>Gold Medalist | 13K+ Supporters | Future Champion</p>
+        <button class="btn">Explore Journey</button>
     </div>
 </section>
 
-<section class="section" id="about">
-    <h3>About The Champion</h3>
+<section class="section" id="journey">
+    <h3>The Journey</h3>
     <p>
-        A young athlete with unstoppable passion and discipline.
-        Winning gold at a young age is just the beginning.
-        The dream is bigger — to represent the nation and stand on the Olympic podium.
+        Passion, discipline, and relentless training define this rising champion.
+        Every morning begins with purpose. Every competition builds character.
+        The dream is bigger than medals — it’s about representing the nation on the global stage.
     </p>
+
+    <div class="stats">
+        <div class="stat">
+            <h4>12+</h4>
+            <span>Medals Won</span>
+        </div>
+        <div class="stat">
+            <h4>8+</h4>
+            <span>Years Training</span>
+        </div>
+        <div class="stat">
+            <h4>13K+</h4>
+            <span>Community</span>
+        </div>
+    </div>
 </section>
 
-<section class="section" id="achievements">
-    <h3>Achievements Wall</h3>
+<section class="section training" id="achievements">
+    <h3>Career Timeline</h3>
 
-    <div class="achievements">
-        <div class="card">
-            <h4>🥇 State Championship</h4>
-            <p>Gold Medal Winner - 2025</p>
+    <div class="timeline">
+        <div class="timeline-item">
+            <strong>Age 8:</strong> Began professional training
         </div>
+        <div class="timeline-item">
+            <strong>Age 11:</strong> First major competition win
+        </div>
+        <div class="timeline-item">
+            <strong>Age 13:</strong> State Gold Medal Champion
+        </div>
+        <div class="timeline-item">
+            <strong>Future:</strong> International Stage
+        </div>
+    </div>
+</section>
 
-        <div class="card">
-            <h4>🥈 District Level</h4>
-            <p>Silver Medal - 2024</p>
-        </div>
+<section class="section">
+    <h3>Community & Influence</h3>
 
-        <div class="card">
-            <h4>🏅 Junior Nationals</h4>
-            <p>Finalist - 2023</p>
-        </div>
+    <div class="social">
+        <div>13K+ Instagram</div>
+        <div>Sports Community</div>
+        <div>Youth Inspiration</div>
     </div>
 </section>
 
 <section class="section" id="contact">
-    <h3>Partner & Contact</h3>
+    <h3>Collaborations & Media</h3>
     <p>
-        For sponsorships, collaborations, and media inquiries,
-        connect and be part of this golden journey.
+        For collaborations, media features, and professional inquiries,
+        please reach out through official contact channels.
     </p>
-    <br>
     <button class="btn">Contact Now</button>
 </section>
 
 <footer>
-    © 2026 Future Champion. All Rights Reserved.
+    © 2026 Athlete Name | All Rights Reserved
 </footer>
 
 </body>
 </html>
-
